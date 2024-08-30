@@ -1,6 +1,5 @@
 # Build stage
-# FROM node:22-alpine AS build
-FROM --platform=linux/arm64 node:22-alpine
+FROM --platform=linux/arm64 node:22-alpine AS build
 
 WORKDIR /app
 
@@ -11,7 +10,7 @@ COPY . .
 RUN npm run build
 
 # Production stage
-FROM node:22-alpine
+FROM --platform=linux/arm64 node:22-alpine
 
 WORKDIR /app
 
