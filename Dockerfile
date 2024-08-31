@@ -1,5 +1,6 @@
 # Use the ARM64-compatible Node.js image
-FROM --platform=linux/arm64 node:22-alpine
+# FROM --platform=linux/arm64 node:22-alpine
+FROM  node:22-alpine
 
 # Set the working directory inside the container
 WORKDIR /app
