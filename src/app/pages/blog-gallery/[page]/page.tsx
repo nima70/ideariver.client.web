@@ -69,7 +69,7 @@ export default async function BlogGallery({ params }: BlogGalleryProps) {
     <main className="flex flex-col min-h-screen bg-background">
       <section className="flex flex-col flex-grow items-center justify-center bg-card py-16 w-full">
         <div className="container mx-auto px-6 text-center w-full flex-grow">
-          <h1 className="text-4xl font-bold mb-8 text-foreground">
+          <h1 className="text-4xl font-bold mb-24 text-foreground  md:mb-8 ">
             Blog Gallery
           </h1>
           <div className="flex flex-col items-center space-y-4">
