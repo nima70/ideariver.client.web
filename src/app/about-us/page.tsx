@@ -18,12 +18,11 @@ const AboutUs = () => {
             />
           </div>
           <p className="text-lg leading-relaxed max-w-3xl mx-auto text-muted-foreground">
-            Welcome to Windsor Digital Marketing Agency! My name is Nima, and I
-            am the sole proprietor of this agency. With a passion for digital
-            marketing and a dedication to helping businesses succeed, I
-            specialize in providing comprehensive digital marketing solutions
-            tailored to meet the unique needs of businesses in Windsor, Ontario,
-            Canada.
+            Welcome to Ideariver Marketing Agency! My name is Nima, and I am the
+            sole proprietor of this agency. With a passion for digital marketing
+            and a dedication to helping businesses succeed, I specialize in
+            providing comprehensive digital marketing solutions tailored to meet
+            the unique needs of businesses in Windsor, Ontario, Canada.
           </p>
           <h2 className="text-2xl font-bold mt-8 mb-4 text-foreground">
             My Mission

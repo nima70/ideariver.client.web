@@ -30,9 +30,7 @@ export function NavBar({ menuItems }: NavBarProps) {
         <div className="container mx-auto p-4 flex justify-between items-center">
           <div className="text-2xl font-bold transition-transform duration-500 transform">
             <Link href="/" legacyBehavior passHref>
-              <div className="flex items-center cursor-pointer">
-                Windsor Digital
-              </div>
+              <div className="flex items-center cursor-pointer">Ideariver</div>
             </Link>
           </div>
           <div className="md:hidden">

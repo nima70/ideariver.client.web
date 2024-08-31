@@ -35,7 +35,7 @@ export default function Home() {
         />
         <div className="relative z-10 bg-background bg-opacity-75 text-foreground text-center py-16 animate__animated animate__fadeInDown">
           <h1 className="text-5xl font-extrabold">
-            Welcome to Windsor Digital Marketing Agency
+            Welcome to Ideariver Marketing Agency
           </h1>
           <p className="mt-4 text-2xl">
             Your Partner in Elevating Your Digital Presence
@@ -60,7 +60,7 @@ export default function Home() {
             className="mx-auto rounded-lg mb-8"
           />
           <p className="text-lg leading-relaxed max-w-3xl mx-auto text-card-foreground">
-            At Windsor Digital Marketing Agency, we specialize in providing
+            At Ideariver Marketing Agency, we specialize in providing
             comprehensive digital marketing solutions tailored to meet the
             unique needs of businesses in Windsor, Ontario, Canada. Our expert
             team is dedicated to helping you achieve your marketing goals
