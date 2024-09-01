@@ -42,7 +42,9 @@ jobs:
           cd $GITHUB_WORKSPACE
 
           # Build the Docker image and tag it as 'latest'
-          docker build -t ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.ECR_REPOSITORY_NAME }}:latest .
+          docker build \
+            --build-arg NEXT_PUBLIC_API_URL=${{ secrets.NEXT_PUBLIC_API_URL }} \
+           -t ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.ECR_REPOSITORY_NAME }}:latest .
 
           # Get the full commit SHA for the hash tag
           FULL_SHA=$(git rev-parse HEAD)
