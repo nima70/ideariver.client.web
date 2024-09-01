@@ -22,6 +22,7 @@ export const sendMessage = createAsyncThunk(
     { rejectWithValue }
   ) => {
     try {
+      console.log(`API URL: ${process.env.NEXT_PUBLIC_API_URL}`);
       const response = await axios.post(
         `${process.env.NEXT_PUBLIC_API_URL}/contact`,
         formData
