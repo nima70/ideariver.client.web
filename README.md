@@ -1,3 +1,7 @@
+
+[![Watch the video](https://img.youtube.com/vi/t84rtdkWBuk/maxresdefault.jpg)](https://youtu.be/t84rtdkWBuk)
+### [Watch this video on YouTube](https://youtu.be/t84rtdkWBuk)
+
 # Adding Secrets to Your GitHub Repository
 
 1. Go to your GitHub repository.
