@@ -2,6 +2,7 @@
   "name": "ideariver.client.web",
   "version": "1.0.2",
   "private": true,
+  "homepage": "./",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,7 +10,7 @@
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
     "test-storybook": "test-storybook",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build -o ./docs"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.2",
