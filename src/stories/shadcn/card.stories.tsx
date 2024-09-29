@@ -59,7 +59,7 @@ export const WithLongContent: Story = {
       <CardContent>
         <p>
           This is a longer content section. You can add any text or even
-          elements inside the content. It's useful for cases where you want to
+          elements inside the content. It is useful for cases where you want to
           provide more details or examples.
         </p>
       </CardContent>
