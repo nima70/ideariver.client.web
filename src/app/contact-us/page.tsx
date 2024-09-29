@@ -5,6 +5,7 @@ import { sendMessage } from "./contactSlice";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+
 const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -12,25 +13,39 @@ const ContactUs = () => {
     message: "",
   });
 
+  const [emailError, setEmailError] = useState<string | null>(null);
+
   const dispatch = useDispatch() as any;
   const { loading, success, error } = useSelector(
     (state: any) => state.contact
   );
 
+  const validateEmail = (email: string) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
+
+    if (name === "email") {
+      setEmailError(validateEmail(value) ? null : "Invalid email address");
+    }
+
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    dispatch(sendMessage(formData));
+    if (!emailError) {
+      dispatch(sendMessage(formData));
+    }
   };
 
   return (
-    <main className="flex flex-col items-center justify-between min-h-screen bg-background">
+    <main className="flex flex-col items-center justify-between min-h-screen bg-background w-full">
       <section className="bg-card py-16 w-full text-card-foreground">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl font-bold mb-8">Contact Us</h1>
@@ -63,7 +78,7 @@ const ContactUs = () => {
                     Name
                   </label>
                   <Input
-                    className="w-full p-3 "
+                    className="w-full p-3"
                     type="text"
                     id="name"
                     name="name"
@@ -80,7 +95,7 @@ const ContactUs = () => {
                     Email
                   </label>
                   <Input
-                    className="w-full p-3 "
+                    className="w-full p-3"
                     type="email"
                     id="email"
                     name="email"
@@ -88,6 +103,9 @@ const ContactUs = () => {
                     onChange={handleChange}
                     required
                   />
+                  {emailError && (
+                    <p className="text-red-500 mt-1 text-sm">{emailError}</p>
+                  )}
                 </div>
                 <div className="mb-4">
                   <label
@@ -97,7 +115,7 @@ const ContactUs = () => {
                     Message
                   </label>
                   <Textarea
-                    className="w-full p-3 "
+                    className="w-full p-3"
                     id="message"
                     name="message"
                     rows={5}
@@ -107,7 +125,7 @@ const ContactUs = () => {
                   />
                 </div>
                 <Button
-                  className="w-full  p-3  hover:-translate-y-1"
+                  className="w-full p-3 hover:-translate-y-1"
                   type="submit"
                   variant={"default"}
                   disabled={loading}

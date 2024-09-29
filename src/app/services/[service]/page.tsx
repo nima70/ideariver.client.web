@@ -40,8 +40,6 @@ const ServicePage = async ({ params }: ServiceProps) => {
       <section className="bg-white py-16 w-full text-black">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl font-bold mb-8 flex items-center justify-center">
-            {/* {Icon}
-            {frontMatter.title} */}
           </h1>
           <article className="prose lg:prose-xl bg-white text-left mx-auto">
             <MDXRemote source={raw} />

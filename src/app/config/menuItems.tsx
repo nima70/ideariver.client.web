@@ -60,7 +60,16 @@ export const menuItems: MenuItem[] = [
     href: "/about-us",
     icon: <InformationCircleIcon />,
   },
-
+  {
+    title: "tools",
+    subMenuItems: [
+      {
+        title: "Embed YouTube Video",
+        href: "/pages/YouTubeMarkdownTool",
+        description: "Turn YouTube links into shareable Markdown snippets.",
+      },
+    ],
+  },
   {
     title: "Blog",
     href: "/pages/blog-gallery/1",

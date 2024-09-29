@@ -32,21 +32,7 @@ const AboutUs = () => {
             I achieve this by leveraging cutting-edge technology and innovative
             strategies to deliver measurable results.
           </p>
-          {/* <h2 className="text-2xl font-bold mt-8 mb-4">Why Choose Me?</h2>
-          <ul className="list-disc list-inside text-lg leading-relaxed max-w-3xl mx-auto">
-            <li>
-              <strong>Expertise</strong>: I have years of experience in the
-              digital marketing industry.
-            </li>
-            <li>
-              <strong>Tailored Solutions</strong>: I offer personalized services
-              to meet your specific needs.
-            </li>
-            <li>
-              <strong>Proven Results</strong>: I have a track record of
-              delivering successful digital marketing campaigns.
-            </li>
-          </ul> */}
+
           <h2 className="text-2xl font-bold mt-8 mb-4 text-foreground">
             Contact Me
           </h2>

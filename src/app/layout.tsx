@@ -7,7 +7,7 @@ import { menuItems } from "./config/menuItems";
 import type { AppProps } from "next/app";
 import StoreProvider from "@/main/Provider";
 // src/pages/_app.tsx
-
+import { Toaster } from "@/components/ui/toaster";
 import store from "../store";
 import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
@@ -45,11 +45,12 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <NavBar menuItems={menuItems} />
-            <main className="mt-16">
+            <main className="mt-16 flex justify-center items-center w-full ">
               {" "}
               {/* Add top margin here */}
               {children}
             </main>
+            <Toaster />
             <Footer />
           </ThemeProvider>
         </body>
