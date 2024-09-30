@@ -1,31 +1,40 @@
 
+# Ideariver Landing Page & Blogging Website
 [![Watch the video](https://img.youtube.com/vi/t84rtdkWBuk/maxresdefault.jpg)](https://youtu.be/t84rtdkWBuk)
 ### [Watch this video on YouTube](https://youtu.be/t84rtdkWBuk)
 
-# Adding Secrets to Your GitHub Repository
+Welcome to the Ideariver project! This repository showcases a landing page and blogging website built to promote digital marketing services. The project is designed to attract local customers, demonstrate custom web development skills, and provide a solid platform for blogging.
 
-1. Go to your GitHub repository.
-2. Click on **Settings** in the repository menu.
-3. In the left sidebar, click on **Secrets and variables** under the **Security** section.
-4. Click **Actions**.
-5. Click the **New repository secret** button.
-6. Add the following secrets:
+## 🚀 Project Overview
+The Ideariver project is a fully responsive landing page built using the following key technologies:
 
-   - **`AWS_ACCESS_KEY_ID`**: Your AWS access key ID.
-   - **`AWS_SECRET_ACCESS_KEY`**: Your AWS secret access key.
-   - **`AWS_REGION`**: The AWS region where your ECR repository is located.
-   - **`AWS_ACCOUNT_ID`**: Your 12-digit AWS account ID.
-   - **`ECR_REPOSITORY_NAME`**: The name of your ECR repository.
-   - **`IMAGE_TAG`**: The tag for your Docker image.
+- Next.js: A powerful React framework for building fast, server-rendered websites.
+- Tailwind CSS: Utility-first CSS framework to style the website efficiently.
+- ShadCN UI: An open-source component library for customizable UI elements.
+- TypeScript: Typed JavaScript for enhanced maintainability and robustness.
+- AWS: Hosting the website and other cloud services.
+- Terraform: Infrastructure as code (IaC) to manage and provision resources.
+- Ansible: For automating software provisioning and application deployment.
+- Express: Backend server handling for custom APIs and blog features.
 
-### Example of Adding a Secret
+## ✨ Features
+- Landing Page: Designed to attract local customers and promote services effectively.
+- Blogging Platform: A blogging section that allows the creation and management of posts.
+- SEO Optimization: Built-in best practices to improve search engine visibility.
+- Video Production: Produced promotional videos and thumbnails to support marketing efforts.
+- Marketing Integration: Managed Facebook ads and implemented strategies to drive website engagement.
 
-For each secret:
+## 🔗 Live Website
+Check out the live version of the website here: https://ideariver.ca
 
-1. Click **New repository secret**.
-2. In the **Name** field, enter the name of the secret (e.g., `AWS_ACCESS_KEY_ID`).
-3. In the **Secret** field, enter the corresponding value.
-4. Click **Add secret**.
+## 📂 Repositories
+Here are the related repositories for the project:
 
-Repeat this process for each of the required secrets.
+Landing Page & Blogging Website (Client):
+https://github.com/nima70/ideariver.client.web.git
 
+Infrastructure Setup (Terraform):
+https://github.com/nima70/ideariver.terraform.git
+
+
+Thank you for exploring the Ideariver project!

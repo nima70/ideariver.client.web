@@ -10,7 +10,7 @@ const AboutUs = () => {
           <h1 className="text-4xl font-bold mb-8 text-foreground">About Me</h1>
           <div className="mb-8 flex justify-center ">
             <Image
-              src="/images/Where-to-begin.jpg"
+              src="images/Where-to-begin.jpg"
               alt="My Picture"
               width={1920}
               height={1080}
