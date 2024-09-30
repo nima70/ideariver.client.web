@@ -1,7 +1,7 @@
 // src/components/BlogGalleryUI.stories.tsx
 
 import { Meta, StoryObj } from "@storybook/react";
-import BlogGalleryUI, { BlogGalleryUIProps } from "./BlogGalleryUI"; // Import the component and the prop types
+import BlogGalleryUI, { BlogGalleryUIProps } from "../../components/BlogGalleryUI"; // Import the component and the prop types
 
 // Define the metadata for the story
 const meta: Meta<typeof BlogGalleryUI> = {
