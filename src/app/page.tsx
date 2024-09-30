@@ -27,7 +27,7 @@ export default function Home() {
         className="relative w-full h-96 pt-24 animate__animated animate__fadeIn"
       >
         <Image
-          src="/images/Hero image.jpg"
+          src="/images/Hero-image.jpg"
           alt="Digital Marketing"
           layout="fill"
           objectFit="cover"
