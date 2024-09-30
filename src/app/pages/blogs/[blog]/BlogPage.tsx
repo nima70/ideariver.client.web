@@ -27,7 +27,6 @@ export const BlogPage = ({
                 height={1080}
                 className="shadow-lg w-3/5 my-6"
               />
-              {frontMatter.coverPhoto}
             </div>
           )}
           <article className="prose lg:prose-xl bg-background text-foreground text-left mx-auto">

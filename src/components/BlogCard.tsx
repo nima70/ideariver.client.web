@@ -31,6 +31,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
       <div className="bg-card text-card-foreground w-full h-full p-6 mb-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 cursor-pointer flex flex-col-reverse md:flex-row items-center">
         <div className="text-2xl font-bold flex-grow text-center md:text-left flex flex-col space-y-4 ">
           <h2 className="align-text-top ">{title}</h2>
+          {coverPhoto}
           <p className="text-muted-foreground text-lg">
             {truncateText(150, description)}
           </p>
