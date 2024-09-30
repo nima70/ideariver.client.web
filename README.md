@@ -1,9 +1,16 @@
 
 # Ideariver Landing Page & Blogging Website
+
+Welcome to the Ideariver project! This repository showcases a landing page and blogging website built to promote digital marketing services. The project is designed to attract local customers, demonstrate custom web development skills, and provide a solid platform for blogging.
+
 [![Watch the video](https://img.youtube.com/vi/t84rtdkWBuk/maxresdefault.jpg)](https://youtu.be/t84rtdkWBuk)
 ### [Watch this video on YouTube](https://youtu.be/t84rtdkWBuk)
 
-Welcome to the Ideariver project! This repository showcases a landing page and blogging website built to promote digital marketing services. The project is designed to attract local customers, demonstrate custom web development skills, and provide a solid platform for blogging.
+
+## 🎨 Play with the Storybook
+Explore and experiment with the UI components used in this project through Storybook.
+You can interact with the components and see how they are built using the following link:
+### [Storybook for Ideariver](https://nima70.github.io/ideariver.client.web/)
 
 ## 🚀 Project Overview
 The Ideariver project is a fully responsive landing page built using the following key technologies:
